@@ -1,5 +1,5 @@
 # 💻 Inventário de Computadores
-
+> **Link do Projeto:** [https://a14702-oficina.infinityfree.me/m6-inventario/index.php](https://a14702-oficina.infinityfree.me/m6-inventario/index.php)
 ## Descrição do Projeto
 
 Este projeto é um sistema simples de **Inventário de Computadores** desenvolvido em PHP e MySQL. O seu objetivo é permitir a gestão e visualização dos equipamentos informáticos distribuídos por diferentes salas.
