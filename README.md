@@ -90,10 +90,10 @@ Edite o ficheiro `config.php` com as credenciais da sua base de dados.
 
 ```php
 <?php
-$host = "sql300.infinityfree.com"; // MUDAR
-$dbname = "if0_40156181_inventario"; // MUDAR
-$user = "if0_40156181"; // MUDAR
-$pass = "3lxGnvbpQ1rU3"; // MUDAR (no XAMPP/WAMP, pode ser vazio "")
+$host = "localhost"; // MUDAR
+$dbname = "inventario_db"; // MUDAR
+$user = "root"; // MUDAR
+$pass = ""; // MUDAR (no XAMPP/WAMP, pode ser vazio "")
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
