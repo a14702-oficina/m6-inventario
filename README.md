@@ -9,8 +9,16 @@
 ---
 
 ## 🎯 Objetivo do Projeto
-O projeto consiste na criação de uma aplicação web para gestão e consulta de inventário de computadores em salas de informática.  
-A aplicação permite consultar informações técnicas de cada computador e o software instalado, também pesquisar computadores por nome ou software e filtrar por sala.
+O objetivo deste projeto é desenvolver uma **aplicação web para gestão de inventário de computadores**, que centralize e organize informações sobre os equipamentos de uma sala de informática.
+
+A aplicação permite:
+
+1. **Consultar informações técnicas dos computadores** – processador, memória RAM, armazenamento, sistema operativo e placa gráfica.  
+2. **Visualizar o software instalado em cada computador**, incluindo versões e licenças.  
+3. **Pesquisar e filtrar computadores** por sala, nome ou software, facilitando a gestão.  
+
+O sistema utiliza **PHP e SQL** para a lógica e base de dados, e **HTML, CSS e Bootstrap** para a interface web.
+
 
 ---
 
