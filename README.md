@@ -108,4 +108,3 @@ try {
 
 Coloque os ficheiros `config.php`, `index.php` e `detalhe.php` no diretório raiz do seu servidor web (ex: `htdocs` no XAMPP).
 
-Aceda à aplicação através do seu navegador: `http://localhost/index.php` (ou o caminho correspondente).
