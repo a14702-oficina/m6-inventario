@@ -82,3 +82,5 @@ O projeto está organizado da seguinte forma:
 - Uso consciente de Inteligência Artificial como ferramenta de apoio técnico e criativo.
 
 ---
+## 🌐 URL/Site do projeto:
+- https://a14702-oficina.infinityfree.me/m6-inventario/index.php
