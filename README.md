@@ -1,87 +1,93 @@
-# 📊 Inventário de Computadores – Aplicação Web (PHP + SQL)
+# 💻 Inventário de Computadores – Aplicação Web
 
-## 👤 Identificação
-- **Nome do aluno:**  Daniel Oliveira Santos
-- **Turma:** 2I
-- **Disciplina:** REDES – M6 – Programação de Sistemas de Informação  
-- **Curso:** GPSI – 2.º Ano  
+[![Tecnologia](https://img.shields.io/badge/Tecnologia-PHP%20%7C%20SQL%20%7C%20Bootstrap-blue.svg)](https://www.php.net/)
+[![Status](https://img.shields.io/badge/Status-Concluído-success.svg)]()
 
----
+## 🎯 Visão Geral do Projeto
 
-## 🎯 Objetivo do Projeto
-O objetivo deste projeto é desenvolver uma **aplicação web para gestão de inventário de computadores**, que centralize e organize informações sobre os equipamentos de uma sala de informática.
+Este projeto consiste no desenvolvimento de uma **aplicação web para a gestão centralizada do inventário de computadores** de uma sala de informática. O objetivo principal é fornecer uma ferramenta eficiente para a organização e consulta de informações técnicas e de software dos equipamentos.
 
-A aplicação permite:
+A aplicação foi desenvolvida no âmbito da disciplina de **REDES – M6 – Programação de Sistemas de Informação** do curso GPSI – 2.º Ano.
 
-1. **Consultar informações técnicas dos computadores** – processador, memória RAM, armazenamento, sistema operativo e placa gráfica.  
-2. **Visualizar o software instalado em cada computador**, incluindo versões e licenças.  
-3. **Pesquisar e filtrar computadores** por sala, nome ou software, facilitando a gestão.  
+## ✨ Funcionalidades Principais
 
-O sistema utiliza **PHP e SQL** para a lógica e base de dados, e **HTML, CSS e Bootstrap** para a interface web.
+A aplicação oferece as seguintes funcionalidades para facilitar a gestão do inventário:
 
+| Funcionalidade | Descrição |
+| :--- | :--- |
+| **Listagem por Sala** | Visualização organizada dos computadores, agrupados por sala, com contadores de equipamentos. |
+| **Detalhe do Computador** | Página dedicada para cada equipamento, exibindo especificações técnicas (Processador, RAM, SO, Gráfica) e o software instalado. |
+| **Pesquisa Avançada** | Sistema de pesquisa e filtragem que permite localizar computadores por **nome**, **processador**, **sistema operativo** ou **software instalado**. |
+| **Dashboard Interativo** | Interface moderna e responsiva (Bootstrap 5) com cards de salas e indicadores visuais. |
+| **API de Pesquisa (AJAX)** | Endpoint dedicado (`api_pesquisa.php`) para consultas rápidas e dinâmicas. |
 
----
+## 🛠️ Tecnologias Utilizadas
 
-## 🧱 Estrutura Geral do Projeto
-O projeto está organizado da seguinte forma:
-- **index.php:** página principal com a listagem de salas e computadores.
-- **detalhe.php:** página de detalhe de cada computador, mostrando especificações e softwares instalados.
-- **config.php:** ficheiro de ligação à base de dados via PDO.
-- **Base de dados:** tabelas `salas`, `computadores`, `software`, `computador_software` (relações N:N).
-- **Estilos e layout:** CSS próprio + Bootstrap 5 + Bootstrap Icons.
+O projeto foi construído com as seguintes tecnologias:
 
----
+*   **Backend:** PHP (com PDO para acesso seguro à base de dados)
+*   **Base de Dados:** SQL (MySQL/TiDB)
+*   **Frontend:** HTML5, CSS3 (Personalizado), Bootstrap 5, Bootstrap Icons
+*   **Estrutura:** Arquitetura MVC simplificada (com ficheiros PHP independentes para lógica e visualização).
 
-## ⚙️ Funcionalidades Desenvolvidas
-- [x] Ligação à base de dados com PHP (PDO)  
-- [x] Listagem de computadores por sala  
-- [x] Visualização das características técnicas de cada computador  
-- [x] Consulta do software instalado  
-- [x] Página de detalhe por computador  
-- [x] Pesquisa por nome de computador  
-- [x] Pesquisa por software  
-- [x] Organização do dashboard com cards de salas e contadores  
-- [x] Melhorias visuais no interface (cores modernas, gradientes, badges, ícones)  
+## 📂 Estrutura do Projeto
 
----
+O projeto é composto pelos seguintes ficheiros principais:
 
-## 🤖 Utilização da Inteligência Artificial (IA)
+| Ficheiro | Descrição |
+| :--- | :--- |
+| `index.php` | Página principal. Responsável pela listagem de salas, contadores e a listagem inicial de computadores. |
+| `detalhe.php` | Página de visualização das especificações técnicas e software de um computador específico. |
+| `config.php` | Ficheiro de configuração da ligação à base de dados (PDO). |
+| `pesquisa.php` | Página para a funcionalidade de pesquisa geral. |
+| `api_pesquisa.php` | Endpoint para requisições AJAX, devolvendo resultados de pesquisa em formato JSON. |
 
-### 🔹 Onde utilizei IA
-- Apoio na escrita e correção de código PHP.  
-- Reorganização e melhoria do layout CSS e do dashboard.  
-- Sugestões para badges, cores, ícones e animações.  
-- Esclarecimento de erros e boas práticas de programação web.
+### 🗄️ Modelo de Dados (Base de Dados)
 
-### 🔹 Como utilizei a IA
-- Recebi exemplos de código que foram adaptados ao meu projeto.  
-- A IA ajudou a compreender erros e sugeriu soluções práticas.  
-- Sugeriu melhorias visuais e estruturais que foram aplicadas na interface.  
+O sistema utiliza um modelo relacional simples com as seguintes tabelas:
 
----
+*   `salas`
+*   `computadores`
+*   `software`
+*   `computador_software` (Tabela de ligação N:N entre `computadores` e `software`)
 
-## ✍️ Trabalho Desenvolvido Manualmente
-- Personalização e adaptação do código sugerido.  
-- Decisões de organização do dashboard e cores.  
-- Escolha do estilo da interface. 
+## 🚀 Como Executar o Projeto
 
----
+Para configurar e executar este projeto localmente, siga os passos abaixo:
 
-## 🚧 Dificuldades Encontradas
-- Implementar filtros e pesquisa que incluíssem várias tabelas (computadores e software).  
-- Ajustar o layout para que ficasse responsivo e visualmente agradável.  
-- Entender corretamente como manter segurança e boas práticas em PHP.
+1.  **Requisitos:** Certifique-se de ter um ambiente de servidor web (como XAMPP, WAMP ou MAMP) com **PHP** e **MySQL** instalados.
+2.  **Base de Dados:** Crie uma base de dados MySQL e importe o esquema de tabelas (o esquema não está incluído, mas as tabelas necessárias são `salas`, `computadores`, `software` e `computador_software`).
+3.  **Configuração:** Edite o ficheiro `config.php` com as suas credenciais de base de dados:
+    ```php
+    $host = "seu_host";
+    $dbname = "seu_db_name";
+    $user = "seu_usuario";
+    $pass = "sua_senha";
+    ```
+4.  **Acesso:** Coloque os ficheiros do projeto no diretório raiz do seu servidor web e aceda através do seu navegador.
 
----
+## 🌐 Demonstração Online
 
-## 📚 Aprendizagens Realizadas
-- Ligação entre PHP e base de dados utilizando PDO.  
-- Estruturação de queries SQL com `JOIN` e `COUNT`.  
-- Criação de interfaces web modernas usando CSS, Bootstrap e ícones.  
-- Organização e documentação do código.  
-- Uso consciente de Inteligência Artificial como ferramenta de apoio técnico e criativo.
+Pode visualizar uma demonstração do projeto em funcionamento através do seguinte URL:
 
----
-## 🌐 URL/Site do projeto:
-- https://a14702-oficina.infinityfree.me/m6-inventario/index.php
----
+[https://a14702-oficina.infinityfree.me/m6-inventario/index.php](https://a14702-oficina.infinityfree.me/m6-inventario/index.php)
+
+## 👤 Contexto e Autoria
+
+Este projeto foi desenvolvido por **Daniel Oliveira Santos** como parte do trabalho prático da disciplina de **REDES – M6 – Programação de Sistemas de Informação**.
+
+### 🤖 Uso de Inteligência Artificial (IA)
+
+A IA foi utilizada como uma **ferramenta de apoio técnico e criativo**, auxiliando nas seguintes áreas:
+
+*   **Apoio ao Código:** Escrita, correção e sugestões de boas práticas em código PHP.
+*   **Design e Interface:** Sugestões para melhoria do layout CSS, cores, ícones e organização do dashboard.
+*   **Resolução de Problemas:** Esclarecimento de erros e sugestões de soluções práticas, especialmente na implementação de filtros complexos com múltiplas tabelas SQL.
+
+### 🚧 Dificuldades Superadas
+
+As principais dificuldades encontradas e superadas durante o desenvolvimento foram:
+
+1.  Implementação de **filtros e pesquisa** que abrangessem dados de múltiplas tabelas (`computadores` e `software`).
+2.  Ajuste do **layout para garantir a responsividade** e um design visualmente agradável.
+3.  Garantir a **segurança e boas práticas** na ligação e manipulação da base de dados com PHP (PDO).
