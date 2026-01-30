@@ -2,7 +2,13 @@
 
 [![Tecnologia](https://img.shields.io/badge/Tecnologia-PHP%20%7C%20SQL%20%7C%20Bootstrap-blue.svg)](https://www.php.net/)
 [![Status](https://img.shields.io/badge/Status-Concluído-success.svg)]()
+## 👤 Identificação
+- **Nome do aluno:** Daniel Oliveira Santos  
+- **Turma:**  2I
+- **Disciplina:** REDES – M6 – Programação de Sistemas de Informação  
+- **Curso:** GPSI – 2.º Ano  
 
+---
 ## 🎯 Visão Geral do Projeto
 
 Este projeto consiste no desenvolvimento de uma **aplicação web para a gestão centralizada do inventário de computadores** de uma sala de informática. O objetivo principal é fornecer uma ferramenta eficiente para a organização e consulta de informações técnicas e de software dos equipamentos.
@@ -66,15 +72,8 @@ Para configurar e executar este projeto localmente, siga os passos abaixo:
     ```
 4.  **Acesso:** Coloque os ficheiros do projeto no diretório raiz do seu servidor web e aceda através do seu navegador.
 
-## 🌐 Demonstração Online
 
-Pode visualizar uma demonstração do projeto em funcionamento através do seguinte URL:
 
-[https://a14702-oficina.infinityfree.me/m6-inventario/index.php](https://a14702-oficina.infinityfree.me/m6-inventario/index.php)
-
-## 👤 Contexto e Autoria
-
-Este projeto foi desenvolvido por **Daniel Oliveira Santos** como parte do trabalho prático da disciplina de **REDES – M6 – Programação de Sistemas de Informação**.
 
 ### 🤖 Uso de Inteligência Artificial (IA)
 
@@ -91,3 +90,9 @@ As principais dificuldades encontradas e superadas durante o desenvolvimento for
 1.  Implementação de **filtros e pesquisa** que abrangessem dados de múltiplas tabelas (`computadores` e `software`).
 2.  Ajuste do **layout para garantir a responsividade** e um design visualmente agradável.
 3.  Garantir a **segurança e boas práticas** na ligação e manipulação da base de dados com PHP (PDO).
+4.  
+## 🌐 Demonstração Online
+
+Pode visualizar uma demonstração do projeto em funcionamento através do seguinte URL:
+
+[https://a14702-oficina.infinityfree.me/m6-inventario/index.php](https://a14702-oficina.infinityfree.me/m6-inventario/index.php)
